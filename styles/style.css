@@ -1,5 +1,11 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+/* 기본스타일 */
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
 /* 본문 스타일 */
 
 body{ 
@@ -10,9 +16,7 @@ body{
 /* select grouping */
 .header,.visual,.main,.slogan,.footer-inner{
   width: 940px;
-  box-sizing: border-box;
   margin: 0 auto;
-
 }
 /* 헤더 */
 .header{
@@ -31,7 +35,34 @@ body{
 .main{
   background: lightgreen;
   height: 50vh;
+  padding: 0 15px;
 }
+.group{
+  margin: 0 15px;
+  float: left;
+}
+
+.group1{
+  background-color: violet;
+  width:250px;
+  float:left;
+ 
+
+}
+.group2{
+  background-color: salmon;
+  width:380px;
+  float:left;
+}
+/* 왜 그룹2의 텍스트는 그룹1 밑으로 가지 않는가?
+contents는 밀어낸다 ex 문자가 많은 워드에 이미지 삽입 시
+글자라 이미지 보더 옆으로 밀어나지는 현상과 같음 */
+.group3{
+  background-color: gold;
+  width:190px;
+  float: left;
+}
+
 /* 슬로건 */
 .slogan{
   background: skyblue;
