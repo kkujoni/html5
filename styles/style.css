@@ -35,24 +35,18 @@ body{
 .main{
   background: lightgreen;
   height: 50vh;
-  padding: 0 15px;
-}
-.group{
-  margin: 0 15px;
-  float: left;
+  display: flex;
+  flex-direction: row;
+  
 }
 
 .group1{
   background-color: violet;
   width:250px;
-  float:left;
- 
-
 }
 .group2{
   background-color: salmon;
   width:380px;
-  float:left;
 }
 /* 왜 그룹2의 텍스트는 그룹1 밑으로 가지 않는가?
 contents는 밀어낸다 ex 문자가 많은 워드에 이미지 삽입 시
@@ -60,7 +54,6 @@ contents는 밀어낸다 ex 문자가 많은 워드에 이미지 삽입 시
 .group3{
   background-color: gold;
   width:190px;
-  float: left;
 }
 
 /* 슬로건 */
