@@ -42,26 +42,28 @@ body{
 }
 /* 텍스트 링크 모음 */
 .member{
-  background-color: burlywood;
   text-align: right;
   padding: 4px 0;  
+  /* position 속성을 활용하여 .member 영역을 오른쪽으로 10px만큼 이동 */
+  /* position:relative;
+  right: -10px; */
+  /*transform 속성을 활용하여 .member 영역을 오른쪽으로 10px만큼 이동  */
+  transform: translateX(10px);
 }
 
 .member li{
-  /* background-color: pink; */
   display: inline-block;
 }
 
 .member a{
-background-color: coral;
 padding: 6px 10px;
 display: inherit;
 text-transform: uppercase;
 }
 
-.member li:last-child a{
+/* .member li:last-child a{
 padding-right: 0;
-}
+} */
 /* 마지막 li 요소에 포함 된 a 요소를 선택해 오른쪽 padding값을 재정의한다 */
 
 .divider{
