@@ -86,7 +86,11 @@ padding-right: 0;
   margin-right: 4px;
 }
 
-
+/* 메인메뉴 */
+.menu{
+  background-color: indigo;
+  background-image: linear-gradient(orange, orangered,orange);
+}
 /* 비주얼 */
 .visual{
   background: orange;
