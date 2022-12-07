@@ -171,9 +171,13 @@ a {
 .sub-menu {
   display: none;
   position: absolute;
-  top: 47px;
-  white-space: nowrap;
-  padding: 4px 0;
+  /* top: 47px; */
+  /* white-space: nowrap; */
+  /* padding: 4px 0; */
+  color: pink;
+}
+.is-active .sub-menu{
+  display: block;
 }
 
 .menu-html,
