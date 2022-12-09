@@ -348,6 +348,17 @@ label{
   font-size: 13px;
 }
 
+.sign li{
+  display: inline-block;
+}
+
+.sign li:first-child{
+  width: 35%;
+}
+.sign li:last-child{
+  width: 65%;
+  text-align: right;
+}
 .sign{
   background-color: #fff;
   display: flex;
@@ -356,6 +367,7 @@ label{
   border-radius: 0 0 5px 5px;
   padding: 4px 10px;
 }
+
 .sign a{
   display: block;
   padding: 6px 0;
@@ -367,6 +379,34 @@ label{
    margin-right: 8px;
    color: orangered;
 }
+/* 유효성 검사 배너 */
+.validation-list{
+  margin-top:25px;
+}
+
+.validation-list li{
+  
+  margin-top:10px ;
+
+}
+
+.validation-list a{
+  background: url("./images/validation_icon.png") no-repeat 25px 50%, #ccc linear-gradient(to bottom ,#ccc,#eee);
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  color: #000;
+  font-weight: 500;
+  display: block;
+  padding: 8px 15px 8px 50px;
+  
+}
+
+.validation-list a:hover,
+.validation-list a:focus{
+  color: red;
+  border:#000 solid 1px;
+}
+
 
 
 /* 슬로건 */
