@@ -700,6 +700,67 @@ body {
   height: 147px;
 }
 
+/* 인기사이트 */
+.favorite{
+  position: relative;
+}
+.favorite-list{ 
+  list-style-type:none;
+  counter-reset: numbering;
+  /* position: relative; */
+}
+
+.favorite-list li{
+  margin-top: 10px;
+  position: relative;
+}
+
+.favorite-list a{
+
+}
+.favorite-list li::before{
+  /* content: "1"; */
+  background-color: #aaa;
+  color: #fff;
+  padding: 1px 6px;
+  font-size: 1.5rem;
+  margin-right: 5px;
+  border-radius: 3px;
+  line-height: 1.5;
+  counter-increment:numbering;
+  content : counter(numbering)
+}
+
+.up,.stop,.down{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -6px;
+  margin-left: 10px;
+  /* display: inline-block; */
+  width: 20px;
+  height: 11px;
+background:  url(./images/rank.png) no-repeat 100% 0;
+}
+
+.up{
+  background-position: 0px 0px;
+}
+
+.stop{
+  background-position: 0px 50%;
+}
+.down{
+ background-position: 0px 100%;
+}
+
+.favorite-more{
+  position: absolute;
+  top: -8px;
+  right:-8px;
+  padding: 8px;
+
+}
 /* 슬로건 */
 .slogan {
   background: skyblue;
